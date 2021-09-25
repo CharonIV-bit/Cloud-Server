@@ -29,4 +29,18 @@ if setfflag then
     setfflag("DFStringCrashUploadToBacktraceWindowsPlayerToken", genstring(math.random(1,250)))
 end
 
+setfflag("DebugCrashEnabled", "true")
+setfflag("DebugReportCrashesForLocalVersion", "false")
+setfflag("ErrorUploadToBacktraceBaseUrl", "https://example.com")
+setfflag("ErrorUploadToBacktraceLuaAppToken", "1234noerrorsforyou")
+setfflag("DebugWatchShowFullError", "false")
+setfflag("DisplayErrorDetailsSecurityLevel", "false")
+setfflag("LoadErrorHandlerInDmSetup2", "false")
+setfflag("LuauParseErrorLimit", -1)
+setfflag("LuauReportParseErrorsFirst", "false")
+setfflag("LuaErrorsInfluxThrottling", 100)
+setfflag("AvoidCrashOnThreadResourceError", "true")
+setfflag("AvoidUnnecessaryQuadtreeLock", "true")
+settings().Diagnostics.IsScriptStackTracingEnabled = false
+
 --end
